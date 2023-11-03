@@ -37,3 +37,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Check out on youtube [Fresh React Portfolio Website](https://www.youtube.com/watch?v=sUKptmUVIBM) by
 ByteGrad.
 Check out on github [portfolio-website](https://github.com/ByteGrad/portfolio-website) for original code.
+https://www.youtube.com/watch?v=sUKptmUVIBM
+[https://github.com/ByteGrad/portfolio](https://github.com/ByteGrad/portfolio-website)https://github.com/ByteGrad/portfolio-website
