@@ -127,5 +127,5 @@ export const skillsData = [
     "LangChain",
     "Hugging Face",
     "Bert",
-    "Antropic"
+    "Anthropic"
 ] as const;
