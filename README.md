@@ -1,41 +1,173 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Folio - Personal Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 14, React, TypeScript, and Tailwind CSS. Features smooth animations, dark mode support, and a functional contact form.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
+- **Dark Mode** - Toggle between light and dark themes with persistent preferences
+- **Smooth Animations** - Powered by Framer Motion for engaging user experience
+- **Interactive Sections** - Dynamic navigation with active section highlighting
+- **Contact Form** - Functional email integration using Resend API
+- **Modern UI** - Clean design with Tailwind CSS styling
+- **Type-Safe** - Built with TypeScript for robust code quality
+
+## 🚀 Tech Stack
+
+### Core
+- **[Next.js 14](https://nextjs.org/)** - React framework with App Router
+- **[React 18](https://react.dev/)** - UI library
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+
+### Styling & UI
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Framer Motion](https://www.framer.com/motion/)** - Animation library
+- **[React Icons](https://react-icons.github.io/react-icons/)** - Icon library
+- **[clsx](https://github.com/lukeed/clsx)** - Conditional className utility
+
+### Components & Features
+- **[React Vertical Timeline](https://www.npmjs.com/package/react-vertical-timeline-component)** - Experience timeline
+- **[React Hot Toast](https://react-hot-toast.com/)** - Notification system
+- **[React Intersection Observer](https://github.com/thebuilder/react-intersection-observer)** - Scroll detection
+- **[React Email](https://react.email/)** - Email template components
+- **[Resend](https://resend.com/)** - Email sending service
+
+## 📁 Project Structure
+
+```
+folio/
+├── actions/              # Server actions
+│   └── sendEmail.ts     # Email sending logic
+├── app/                 # Next.js App Router
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Homepage
+├── components/          # React components
+│   ├── about.tsx
+│   ├── contact.tsx
+│   ├── experience.tsx
+│   ├── footer.tsx
+│   ├── header.tsx
+│   ├── intro.tsx
+│   ├── project.tsx
+│   ├── projects.tsx
+│   ├── section-divider.tsx
+│   ├── section-heading.tsx
+│   ├── skills.tsx
+│   ├── submit-btn.tsx
+│   └── theme-switch.tsx
+├── context/             # React Context providers
+│   ├── active-section-context.tsx
+│   └── theme-context.tsx
+├── email/               # Email templates
+│   └── contact-form-email.tsx
+├── lib/                 # Utilities and data
+│   ├── data.ts         # Portfolio content
+│   ├── hooks.ts        # Custom React hooks
+│   ├── types.ts        # TypeScript types
+│   └── utils.ts        # Helper functions
+├── public/             # Static assets
+└── types/              # TypeScript declarations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Node.js 18+ installed
+- npm, yarn, pnpm, or bun package manager
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+```bash
+git clone https://github.com/audrbar/folio.git
+cd folio
+```
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Create a `.env` file in the root directory:
+```env
+RESEND_API_KEY=your_resend_api_key_here
+```
 
-## Deploy on Vercel
+4. Run the development server:
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-Check out on youtube [Fresh React Portfolio Website](https://www.youtube.com/watch?v=sUKptmUVIBM) by
-ByteGrad.
-Check out on github [portfolio-website](https://github.com/ByteGrad/portfolio-website) for original code.
-https://www.youtube.com/watch?v=sUKptmUVIBM
-[https://github.com/ByteGrad/portfolio](https://github.com/ByteGrad/portfolio-website)https://github.com/ByteGrad/portfolio-website
+### Environment Variables
+
+- `RESEND_API_KEY` - Your Resend API key for email functionality ([Get it here](https://resend.com/))
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🎨 Customization
+
+### Personal Information
+
+Update your personal information in `lib/data.ts`:
+
+- `links` - Navigation menu items
+- `experiencesData` - Work experience and education
+- `projectsData` - Portfolio projects
+- `skillsData` - Technical skills
+
+### Contact Email
+
+Update the recipient email in `actions/sendEmail.ts`:
+
+```typescript
+to: ["your-email@example.com"]
+```
+
+### Styling
+
+- Global styles: `app/globals.css`
+- Tailwind configuration: `tailwind.config.ts`
+- Theme colors and fonts: `app/layout.tsx`
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+1. Push your code to GitHub
+2. Import project to Vercel
+3. Add environment variables
+4. Deploy
+
+See [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more options.
+
+## 📄 License
+
+This project is open source and available for personal use.
+
+## 🙏 Acknowledgments
+
+Original design and tutorial by [ByteGrad](https://github.com/ByteGrad/portfolio-website)
+- [YouTube Tutorial](https://www.youtube.com/watch?v=sUKptmUVIBM)
+- [Original Repository](https://github.com/ByteGrad/portfolio-website)
+
+## 👤 Author
+
+**Audrius Baronas**
+
+- LinkedIn: [@audrius-baronas](https://www.linkedin.com/in/audrius-baronas-525078257/)
+- GitHub: [@audrbar](https://github.com/audrbar)
+
+---
+
+Built with ❤️ using React & Next.js

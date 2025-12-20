@@ -19,30 +19,35 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        My journey into programming began after graduating with a degree in{" "}
+        <span className="font-medium">Chemical Engineering</span> from Kaunas University of Technology.
+        With over <span className="font-medium">5 years of intensive learning</span>, I've completed
+        programs at Baltic Institute of Technology and Vilnius CODING School, specializing in{" "}
+        <span className="font-medium">JavaScript Programming and Data Science</span>.{" "}
+        <span className="italic">What drives me in programming</span> is the intersection of
+        AI and practical applications. I <span className="underline">thrive</span> on
+        building intelligent systems that solve real-world problems.
+      </p>
+
+      <p className="mb-3">
+        My technical expertise spans{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, Python, and Machine Learning
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I work extensively with modern ML frameworks like{" "}
+        <span className="font-medium">TensorFlow, PyTorch, and LangChain</span>,
+        combined with full-stack technologies including TypeScript, Node.js, and databases like
+        MongoDB and PostgreSQL. I'm passionate about creating{" "}
+        <span className="font-medium">AI agents and intelligent applications</span> that
+        bridge the gap between complex AI models and user-friendly interfaces.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">When I'm not coding</span>, I'm constantly exploring
+        emerging AI technologies and experimenting with tools like{" "}
+        <span className="font-medium">Ollama, Hugging Face, and Anthropic</span>.
+        I believe in continuous learning and staying at the forefront of the rapidly
+        evolving AI landscape.
       </p>
     </motion.section>
   );
