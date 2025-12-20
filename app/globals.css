@@ -9,3 +9,19 @@ html {
 .borderBlack {
     @apply border border-black/10;
 }
+
+/* Override vertical timeline default width */
+.vertical-timeline {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.vertical-timeline-element-content {
+    max-width: 100% !important;
+}
+
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-content {
+        width: 44% !important;
+    }
+}
