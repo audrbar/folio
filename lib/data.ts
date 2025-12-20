@@ -35,28 +35,36 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "Vilnius CODING School",
+        location: "Vilnius, LT",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019",
-    },
-    {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
-        description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "Junior Programmer, Data Science Course",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "2024 - 2025",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "Baltic Institute of Technology",
+        location: "Vilnius, LT",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+            "Junior Programmer, JavaScript Programming",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "2022 - 2023",
+    },
+    {
+        title: "Kaunas University of Technology",
+        location: "Kaunas, LT",
+        description:
+            "Social Sciences",
+        icon: React.createElement(LuGraduationCap),
+        date: "2000 - 2002",
+    },
+    {
+        title: "Kaunas University of Technology",
+        location: "Kaunas, LT",
+        description:
+            "Chemical Engineering",
+        icon: React.createElement(LuGraduationCap),
+        date: "1990 - 1995",
     },
 ] as const;
 
@@ -92,16 +100,32 @@ export const skillsData = [
     "React",
     "Next.js",
     "Node.js",
-    "Git",
+    "GitHub",
     "Tailwind",
     "Prisma",
     "MongoDB",
+    "PostgreSQL",
     "Redux",
     "GraphQL",
     "Apollo",
     "Express",
-    "PostgreSQL",
-    "Python",
     "Django",
     "Framer Motion",
+    "Python",
+    "Machine Learning",
+    "Data Analysis",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Scikit-learn",
+    "TensorFlow",
+    "Keras",
+    "PyTorch",
+    "Jupyter Notebooks",
+    "Ollama",
+    "LangChain",
+    "Hugging Face",
+    "Bert",
+    "Antropic"
 ] as const;
