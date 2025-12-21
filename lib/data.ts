@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import coditoryImg from "@/public/coditory.png";
+import priceryImg from "@/public/pricery.png";
+import promtopadaImg from "@/public/promtopiada.png";
 
 export const links = [
     {
@@ -70,25 +70,31 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Coditory",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+            "A modern, full-stack Reddit clone built with Next.js 13, featuring communities (subreddits), posts, comments, voting, and real-time interactions.",
+        tags: ["NextJS", "TypeScript", "Upstash", "GoogleAuth", "Shadcn-ui", "Prisma"],
+        siteUrl: "https://coditory.vercel.app/",
+        sourceUrl: "https://github.com/audrbar/codit/",
+        imageUrl: coditoryImg,
     },
     {
-        title: "rmtDev",
+        title: "Pricery",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "A powerful, self-serve product and price tracking application that helps you monitor selected products, get price alerts, and make informed purchasing decisions.",
+        tags: ["NextJS", "TypeScript", "Tailwind", "MongoDB", "Mongoose", "Cheerio", "Axios", "Nodemailer"],
+        siteUrl: "https://pricery.vercel.app/",
+        sourceUrl: "https://github.com/audrbar/pricery",
+        imageUrl: priceryImg,
     },
     {
-        title: "Word Analytics",
+        title: "Promptopiada",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+            "An open-source AI prompting tool that enables users to discover, create, and share creative prompts for use with AI chatbots like ChatGPT.",
+        tags: ["ReactJS", "NextJS", "MongoDB", "Mongoose", "Tailwind", "NextAuth"],
+        siteUrl: "https://promptopiada.vercel.app",
+        sourceUrl: "https://github.com/audrbar/promptopia",
+        imageUrl: promtopadaImg,
     },
 ] as const;
 
@@ -112,20 +118,18 @@ export const skillsData = [
     "Django",
     "Framer Motion",
     "Python",
-    "Machine Learning",
-    "Data Analysis",
     "Pandas",
     "NumPy",
     "Matplotlib",
     "Seaborn",
+    "Jupyter Notebooks",
+    "Machine Learning",
     "Scikit-learn",
     "TensorFlow",
     "Keras",
     "PyTorch",
-    "Jupyter Notebooks",
+    "Hugging Face",
     "Ollama",
     "LangChain",
-    "Hugging Face",
-    "Bert",
-    "Anthropic"
+    "Data Analysis"
 ] as const;
