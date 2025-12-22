@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaPython } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import coditoryImg from "@/public/coditory.png";
 import priceryImg from "@/public/pricery.png";
 import promtopadaImg from "@/public/promtopiada.png";
+import folioImg from "@/public/folio.png";
 
 export const links = [
     {
@@ -24,8 +25,8 @@ export const links = [
         hash: "#skills",
     },
     {
-        name: "Experience",
-        hash: "#experience",
+        name: "Background",
+        hash: "#background",
     },
     {
         name: "Contact",
@@ -35,18 +36,26 @@ export const links = [
 
 export const experiencesData = [
     {
+        title: "Baltic Institute of Technology",
+        location: "Vilnius, LT",
+        description:
+            "Specialized training in Generative AI application development using Python. Covered prompt engineering, LLM integration, building AI agents, working with vector databases, implementing RAG (Retrieval-Augmented Generation) systems, and deploying production-ready AI-powered applications.",
+        icon: React.createElement(FaPython),
+        date: "2025",
+    },
+    {
         title: "Vilnius CODING School",
         location: "Vilnius, LT",
         description:
-            "Junior Programmer, Data Science Course",
-        icon: React.createElement(CgWorkAlt),
+            "Completed comprehensive Data Science program covering Python fundamentals, version control with Git, OOP principles and their application in data analysis, Pandas library mastery, Python testing methodologies, data preparation and SQL integration, advanced clustering and classification algorithms, machine learning techniques and deep neural network architectures.",
+        icon: React.createElement(FaPython),
         date: "2024 - 2025",
     },
     {
         title: "Baltic Institute of Technology",
         location: "Vilnius, LT",
         description:
-            "Junior Programmer, JavaScript Programming",
+            "Completed formal vocational training program and acquired professional qualification as a JavaScript Programmer. Comprehensive modular curriculum covering JavaScript fundamentals, modern ES6+ syntax, DOM manipulation, asynchronous programming, web APIs, front-end frameworks, and full-stack development practices.",
         icon: React.createElement(FaReact),
         date: "2022 - 2023",
     },
@@ -69,6 +78,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "Portfolio",
+        description:
+            "A modern, responsive portfolio website built with NextJS, React, TypeScript and Tailwind CSS. Features smooth animations, dark mode support, and a functional contact form.",
+        tags: ["NextJS", "TypeScript", "Tailwind", "Framer Motion", "React Icons"],
+        siteUrl: "https://audrbar.vercel.app/",
+        sourceUrl: "https://github.com/audrbar/folio/",
+        imageUrl: folioImg,
+    },
     {
         title: "Coditory",
         description:
