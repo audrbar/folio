@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -11,6 +12,8 @@ export default function Project({
   title,
   description,
   tags,
+  siteUrl,
+  sourceUrl,
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -32,7 +35,35 @@ export default function Project({
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <div className="flex items-center justify-between gap-2">
+            <h3 className="text-2xl font-semibold">{title}</h3>
+            <div className="flex gap-2">
+              {siteUrl && (
+                <motion.a
+                  href={siteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-8 h-8 bg-gray-900/20 text-gray-900 rounded-full backdrop-blur-sm hover:bg-gray-900/30 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <AiFillEye className="w-4 h-4" />
+                </motion.a>
+              )}
+              {sourceUrl && (
+                <motion.a
+                  href={sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-8 h-8 bg-gray-900/20 text-gray-900 rounded-full backdrop-blur-sm hover:bg-gray-900/30 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <AiFillGithub className="w-4 h-4" />
+                </motion.a>
+              )}
+            </div>
+          </div>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>

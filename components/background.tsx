@@ -8,17 +8,18 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 
-export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+export default function Background() {
+  const { ref } = useSectionInView("Background", 0.5);
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 max-w-[90rem] mx-auto px-4">
-      <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+    <section id="background" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 max-w-[53rem] mx-auto px-4">
+      <SectionHeading>My Background</SectionHeading>
+      <VerticalTimeline lineColor={theme === "light" ? "#e5e7eb" : "rgba(255, 255, 255, 0.2)"}>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              visible={true}
               contentStyle={{
                 background:
                   theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
